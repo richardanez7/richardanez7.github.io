@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moisturizing Cream - Proyecto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #d5006d;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        /* Líneas decorativas en los costados */
+        body::before, body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        body::before {
+            left: 0;
+        }
+
+        body::after {
+            right: 0;
+        }
+
+        h1 {
+            color: #fff;
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header, .footer {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px 0;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: 1.5em;
+            margin: 0;
+        }
+
+        .footer p {
+            font-size: 1.2em;
+        }
+
+        .footer a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5em;
+        }
+
+        .footer a:hover {
+            color: #ff4f9a;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        .large-image {
+            width: 60%; /* Ajustado al 60% del ancho */
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            margin-bottom: 30px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .content {
+            background-color: white;
+            color: #000;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: justify;
+            width: 100%;
+            max-width: 900px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .integrantes {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .equipo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px; /* Espacio superior para separar el gerente de los otros integrantes */
+        }
+
+        .integrante {
+            text-align: center;
+            width: 150px;
+        }
+
+        .integrante img {
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
+            object-fit: cover; /* Para que las imágenes se ajusten sin deformarse */
+            margin-bottom: 10px;
+        }
+
+        .button {
+            background-color: white;
+            color: #d5006d;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background-color: #ff4f9a;
+        }
+
+        /* Nueva clase para centrar el gerente */
+        .gerente-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centra horizontalmente */
+            justify-content: center; /* Centra verticalmente */
+            margin: 20px 0; /* Espacio alrededor del gerente */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <div class="header">
+        <h1>MOISTURIZING CREAM</h1>
+        <p>Crema Hidratante a base de Pitahaya</p>
+    </div>
+
+    <!-- Imagen Principal -->
+    <div class="container">
+        <img src="fotos/aaaaaaaaaaaah.png" alt="Imagen Principal">
+    </div>
+
+    <!-- Integrantes con fotos cuadradas -->
+    <div class="container">
+        <section class="content">
+            <h2>Integrantes del Proyecto</h2>
+
+            <!-- Contenedor centrado para el Gerente General -->
+            <div class="gerente-container">
+                <div class="integrante">
+                    <img src="fotos/richard.jpg" alt="Foto de Richard Mario Añez Bazán">
+                    <p><strong>Gerente General:</strong> Richard Mario Añez Bazán</p>
+                </div>
+            </div>
+
+            <!-- Otros Integrantes -->
+            <div class="equipo">
+                <div class="integrante">
+                    <img src="fotos/beta.png" alt="Foto de Sofía Pereyra Sainz">
+                    <p><strong>Departamento de Contabilidad:</strong> Sofía Pereyra Sainz</p>
+                </div>
+                <div class="integrante">
+                    <img src="fotos/angel.jpg" alt="Foto de Ángel Fabián Ortiz Cazón">
+                    <p><strong>Departamento de Marketing:</strong> Ángel Fabián Ortiz Cazón</p>
+                </div>
+                <div class="integrante">
+                    <img src="fotos/ruiz.jpg" alt="Foto de Andrés Ruiz Flores">
+                    <p><strong>Departamento de RR.HH.:</strong> Andrés Ruiz Flores</p>
+                </div>
+                <div class="integrante">
+                    <img src="fotos/miguel.jpg" alt="Foto de Miguel Ángel Hurtado Franco">
+                    <p><strong>Departamento de Producción:</strong> Miguel Ángel Hurtado Franco</p>
+                </div>
+                <div class="integrante">
+                    <img src="fotos/pedri.jpg" alt="Foto de María José Pedriel Ruiz">
+                    <p><strong>Departamento de Producción:</strong> María José Pedriel Ruiz</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Sección de la imagen grande del producto -->
+    <div class="container">
+        <section class="content">
+            <h2 style="text-align: center;">Conoce nuestro producto:</h2> <!-- Título centrado -->
+            <img class="large-image" src="fotos/producto.jpg" alt="Crema Hidratante de Pitahaya" style="width: 60%;">
+            <p style="text-align: center; font-size: 1.5em;"><strong>Crema Hidratante de Pitahaya</strong></p>
+        </section>
+    </div>
+    
+        <!-- Contenido principal -->
+        <div class="container">
+            <section class="content">
+                <h2>¿De qué se trata el proyecto?</h2>
+                <p>El proyecto consiste en la elaboración de una crema facial hidratante a base de pitahaya. Esta fruta, conocida por sus propiedades antioxidantes y su alto contenido en vitamina C, es ideal para el cuidado de la piel, ya que promueve la producción de colágeno, lo que ayuda a mantener la piel firme, elástica y libre de signos de envejecimiento.</p>
+            </section>
+
+            <section class="content">
+                <h2>¿Por qué realizamos este proyecto?</h2>
+                <p>Decidimos llevar a cabo este proyecto para ofrecer una alternativa natural en el cuidado de la piel, aprovechando los beneficios de la pitahaya. Con el aumento en la demanda de productos cosméticos naturales, queremos ofrecer una crema hidratante eficaz, amigable con el medio ambiente y que nutra la piel de manera saludable.</p>
+            </section>
+
+            <section class="content">
+                <h2>Beneficios de la Pitahaya</h2>
+                <ul>
+                    <li>Rica en antioxidantes, que ayudan a combatir los radicales libres responsables del envejecimiento.</li>
+                    <li>Alto contenido de vitamina C, que promueve la producción de colágeno y mejora la firmeza de la piel.</li>
+                    <li>Propiedades hidratantes, perfectas para mantener la piel suave y nutrida.</li>
+                    <li>Ideal para combatir la resequedad en climas cálidos, gracias a su capacidad para retener la humedad.</li>
+                </ul>
+            </section>
+
+            <section class="content">
+                <h2>Proceso de Elaboración</h2>
+                <p>La elaboración de nuestra crema hidratante a base de pitahaya incluye los siguientes pasos y componentes:</p>
+                
+                <h3>Ingredientes:</h3>
+                <ul>
+                    <li>1 pitahaya (fruta del dragón)</li>
+                    <li>2 cucharadas de aceite de coco</li>
+                    <li>2 cucharadas de aceite de almendras dulces</li>
+                    <li>1 cucharada de cera de abejas</li>
+                    <li>1 cucharadita de vitamina E (opcional)</li>
+                    <li>5 gotas de aceite esencial (opcional, para fragancia)</li>
+                </ul>
+
+                <h3>Proceso de elaboración:</h3>
+                <ul>
+                    <li><strong>Preparar la Pitahaya:</strong> Corta la pitahaya por la mitad y saca la pulpa con una cuchara. Tritura la pulpa en una licuadora o procesador de alimentos hasta obtener un puré suave. Si prefieres una textura más fina, cuela el puré para eliminar las semillas.</li>
+                    <li><strong>Derretir la Cera de Abejas:</strong> En una olla pequeña, derrite la cera de abejas a baño maría para evitar que se queme.</li>
+                    <li><strong>Mezclar los Aceites:</strong> Una vez que la cera esté derretida, añade el aceite de coco y el aceite de almendras dulces. Remueve bien hasta que todos los ingredientes estén bien integrados.</li>
+                    <li><strong>Combinar con la Pitahaya:</strong> Retira la mezcla de aceites del fuego y deja que se enfríe un poco. Añade el puré de pitahaya, removiendo bien hasta que se integre por completo. Añade vitamina E y aceite esencial si lo deseas.</li>
+                    <li><strong>Enfriar y Almacenar:</strong> Vierte la mezcla en un frasco limpio y esterilizado. Deja que la crema se enfríe a temperatura ambiente antes de tapar el frasco. Almacena en un lugar fresco y seco. Puede durar varias semanas si se usa con manos limpias.</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- Aquí puedes poner la segunda imagen, mucho más grande -->
+    <div class="container">
+        <img class="large-image" src="fotos/Moisturizing Cream Bannner.png" alt="Imagen Secundaria Grande" style="width: 100%;">
+    </div>
+
+    <!-- Pie de página -->
+    <div class="footer">
+        <p>Santa Cruz – Bolivia, 2024</p>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://instagram.com/moisturizingcream" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+</body>
+</html>
